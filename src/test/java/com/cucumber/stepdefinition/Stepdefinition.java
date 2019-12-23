@@ -1,53 +1,66 @@
 package com.cucumber.stepdefinition;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import com.cucumber.testrunner.TestRunner;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class Stepdefinition {
 
-	@Given("^User launch the browser and hit the facebook application$")
-	public void user_launch_the_browser_and_hit_the_facebook_application() throws Throwable {
-		System.out.println("Hit FB App");
+	public static WebDriver driver = TestRunner.driver;
+
+	@When("^User launch the fb$")
+	public void user_launch_the_fb() {
+		driver.get("https://www.facebook.com/");
+
+	}
+	@When("^User enter the email in the emailid feild$")
+	public void user_enter_the_email_in_the_emailid_feild() throws Throwable {
+		driver.findElement(By.id("email")).sendKeys("test");
 	}
 
-	@When("^User enter the user name or email id$")
-	public void user_enter_the_user_name_or_email_id() throws Throwable {
-		System.out.println("Entered testuser@gmail.com");
+	@When("^User enter the password in the password feild$")
+	public void user_enter_the_password_in_the_password_feild() throws Throwable {
+		driver.findElement(By.id("pass")).sendKeys("test");
+
 	}
 
-	@When("^User enter the password$")
-	public void user_enter_the_password() throws Throwable {
-		System.out.println("entered password123");
+	@When("^User click on login button$")
+	public void user_click_on_login_button() throws Throwable {
+		driver.findElement(By.id("loginbutton")).click();
 	}
 
-	@When("^User click on the login button$")
-	public void user_click_on_the_login_button() throws Throwable {
-		System.out.println("Clicked on login");
+	@When("^User enter the email id '(.*)'$")
+	public void user_enter_the_email_id_d(String arg) throws Throwable {
+		driver.findElement(By.id("email")).sendKeys(arg);
+
 	}
 
-	@Then("^User Verify the user name in the header$")
-	public void user_Verify_the_user_name_in_the_header() throws Throwable {
-		System.out.println("Test user present in the header");
+	@When("^User enter the password '(.*)'$")
+	public void user_enter_the_password_d(String arg) throws Throwable {
+		driver.findElement(By.id("pass")).sendKeys(arg);
+
 	}
 
-	@When("^User enter the user name or email id \"([^\"]*)\"$")
-	public void user_enter_the_user_name_or_email_id(String arg1) throws Throwable {
-		System.out.println("Entered email is "+ arg1);
+	@When("^User enter the firstname '(.*)'$")
+	public void user_enter_the_firstname_D(String arg) throws Throwable {
+		driver.findElement(By.name("firstname")).sendKeys(arg);
 	}
 
-	@When("^User enter the password \"([^\"]*)\"$")
-	public void user_enter_the_password(String arg1) throws Throwable {
-		System.out.println("Entered password "+ arg1);
+	@When("^User enter the lastname '(.*)'$")
+	public void user_enter_the_lastname_D(String arg) throws Throwable {
+		driver.findElement(By.name("lastname")).sendKeys(arg);
+
 	}
 
-	@Then("^User verify the user name \"([^\"]*)\" in the header$")
-	public void user_verify_the_user_name_in_the_header(String arg1) throws Throwable {
-		System.out.println("User displayed is "+ arg1);
+	@When("^User enter the mobilenumber '(.*)'$")
+	public void user_enter_the_mobilenumber_d(String arg) throws Throwable {
+		driver.findElement(By.name("reg_email__")).sendKeys(arg);
+
 	}
-	
-	@When("^User logout the application$")
-	public void user_logout_the_application() {
-		System.out.println("User logout the application");
-	}
+
 }

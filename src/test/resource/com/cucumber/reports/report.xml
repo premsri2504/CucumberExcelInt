@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.742377">
-<testcase classname="Task in adactin hotel application" name="To verify valid login details" time="11.742377">
-<system-out><![CDATA[When Launch hotel reservation application...................................passed
-And Login to the application using username and password....................passed
-Then User verifies the username in the HomePage.............................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="24.788182">
+<testcase classname="Facebook Test scenarios" name="Verify the register functionality with examples" time="7.83311">
+<system-out><![CDATA[Given User launch the fb....................................................passed
+When User enter the firstname 'TestFN'......................................passed
+And User enter the lastname 'TestLN'........................................passed
+And User enter the mobilenumber '9876543212345'.............................passed
+And User enter the password '1234'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook Test scenarios" name="Verify the register functionality with examples 2" time="3.68003">
+<system-out><![CDATA[Given User launch the fb....................................................passed
+When User enter the firstname 'Test1FN'.....................................passed
+And User enter the lastname 'Test1ln'.......................................passed
+And User enter the mobilenumber '12345678'..................................passed
+And User enter the password '5678'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook Test scenarios" name="Verify the register functionality with examples 3" time="3.957415">
+<system-out><![CDATA[Given User launch the fb....................................................passed
+When User enter the firstname 'Test2FN'.....................................passed
+And User enter the lastname 'Test2LN'.......................................passed
+And User enter the mobilenumber '4657676'...................................passed
+And User enter the password '9012'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook Test scenarios" name="Verify the register functionality with examples 4" time="3.40732">
+<system-out><![CDATA[Given User launch the fb....................................................passed
+When User enter the firstname 'Test2FN'.....................................passed
+And User enter the lastname 'Test2LN'.......................................passed
+And User enter the mobilenumber '4657676'...................................passed
+And User enter the password '9012'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook Test scenarios" name="Verify the register functionality with examples 5" time="2.739614">
+<system-out><![CDATA[Given User launch the fb....................................................passed
+When User enter the firstname 'Test2FN'.....................................passed
+And User enter the lastname 'Test2LN'.......................................passed
+And User enter the mobilenumber '4657676'...................................passed
+And User enter the password '9012'..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook Test scenarios" name="Verify the register functionality with examples 6" time="3.170693">
+<system-out><![CDATA[Given User launch the fb....................................................passed
+When User enter the firstname 'Test2FN'.....................................passed
+And User enter the lastname 'Test2LN'.......................................passed
+And User enter the mobilenumber '4657676'...................................passed
+And User enter the password '9012'..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

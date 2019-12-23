@@ -1,37 +1,25 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Launch hotel reservation application using URL",
+        "line": 4,
+        "name": "User launch the browser",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 3598240100,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Launch hotel reservation application",
-            "match": {
-              "location": "AdactinStepDefinition.launch_hotel_reservation_application()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8024706300,
+              "duration": 6785289400,
               "status": "passed"
             },
             "line": 5,
-            "name": "Login to the application using username and password",
+            "name": "User launch the fb",
             "match": {
-              "location": "AdactinStepDefinition.login_to_the_application_using_username_and_password()"
+              "location": "Stepdefinition.user_launch_the_fb()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           }
         ]
       },
@@ -39,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 295400,
+              "duration": 224900,
               "status": "passed"
             },
             "match": {
@@ -47,14 +35,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "To verify valid login details",
+        "line": 20,
+        "name": "Verify the register functionality with examples",
         "description": "",
-        "id": "task-in-adactin-hotel-application;to-verify-valid-login-details",
+        "id": "facebook-test-scenarios;verify-the-register-functionality-with-examples;;2",
         "after": [
           {
             "result": {
-              "duration": 342200,
+              "duration": 173900,
               "status": "passed"
             },
             "match": {
@@ -63,33 +51,850 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 118793000,
+              "duration": 324015400,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User verifies the username in the HomePage",
+            "line": 13,
+            "name": "User enter the firstname \u0027TestFN\u0027",
             "match": {
-              "location": "AdactinStepDefinition.user_verifies_the_username_in_the_HomePage()"
+              "arguments": [
+                {
+                  "val": "TestFN",
+                  "offset": 26
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_firstname_D(String)"
             },
-            "keyword": "Then "
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 339688500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the lastname \u0027TestLN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestLN",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_lastname_D(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 240128600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the mobilenumber \u00279876543212345\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9876543212345",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_mobilenumber_d(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143589600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the password \u00271234\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_password_d(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 7,
-            "name": "@TC_101"
+            "line": 11,
+            "name": "@fb3"
+          },
+          {
+            "line": 1,
+            "name": "@fb1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2743789900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the fb",
+            "match": {
+              "location": "Stepdefinition.user_launch_the_fb()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 39700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify the register functionality with examples",
+        "description": "",
+        "id": "facebook-test-scenarios;verify-the-register-functionality-with-examples;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 62300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 214928200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the firstname \u0027Test1FN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test1FN",
+                  "offset": 26
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_firstname_D(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 248369600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the lastname \u0027Test1ln\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test1ln",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_lastname_D(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261651400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the mobilenumber \u002712345678\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345678",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_mobilenumber_d(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211189200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the password \u00275678\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5678",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_password_d(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@fb3"
+          },
+          {
+            "line": 1,
+            "name": "@fb1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3189636600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the fb",
+            "match": {
+              "location": "Stepdefinition.user_launch_the_fb()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 43900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify the register functionality with examples",
+        "description": "",
+        "id": "facebook-test-scenarios;verify-the-register-functionality-with-examples;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 38200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 235651900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the firstname \u0027Test2FN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2FN",
+                  "offset": 26
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_firstname_D(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 209710600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the lastname \u0027Test2LN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2LN",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_lastname_D(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181465900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the mobilenumber \u00274657676\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4657676",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_mobilenumber_d(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140867600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the password \u00279012\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9012",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_password_d(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@fb3"
+          },
+          {
+            "line": 1,
+            "name": "@fb1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2600297300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the fb",
+            "match": {
+              "location": "Stepdefinition.user_launch_the_fb()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 37100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify the register functionality with examples",
+        "description": "",
+        "id": "facebook-test-scenarios;verify-the-register-functionality-with-examples;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 37100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 181432500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the firstname \u0027Test2FN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2FN",
+                  "offset": 26
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_firstname_D(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 300530200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the lastname \u0027Test2LN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2LN",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_lastname_D(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184967600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the mobilenumber \u00274657676\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4657676",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_mobilenumber_d(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140017800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the password \u00279012\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9012",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_password_d(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@fb3"
+          },
+          {
+            "line": 1,
+            "name": "@fb1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2101840900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the fb",
+            "match": {
+              "location": "Stepdefinition.user_launch_the_fb()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 33800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify the register functionality with examples",
+        "description": "",
+        "id": "facebook-test-scenarios;verify-the-register-functionality-with-examples;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 30100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 211345900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the firstname \u0027Test2FN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2FN",
+                  "offset": 26
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_firstname_D(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165403500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the lastname \u0027Test2LN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2LN",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_lastname_D(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143036500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the mobilenumber \u00274657676\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4657676",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_mobilenumber_d(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117923300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the password \u00279012\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9012",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_password_d(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@fb3"
+          },
+          {
+            "line": 1,
+            "name": "@fb1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User launch the browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2453101700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch the fb",
+            "match": {
+              "location": "Stepdefinition.user_launch_the_fb()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeHooks()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Verify the register functionality with examples",
+        "description": "",
+        "id": "facebook-test-scenarios;verify-the-register-functionality-with-examples;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 29900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 217357200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter the firstname \u0027Test2FN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2FN",
+                  "offset": 26
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_firstname_D(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182955600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter the lastname \u0027Test2LN\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test2LN",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_lastname_D(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176900500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the mobilenumber \u00274657676\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4657676",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_mobilenumber_d(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140300900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the password \u00279012\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9012",
+                  "offset": 25
+                }
+              ],
+              "location": "Stepdefinition.user_enter_the_password_d(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@fb3"
+          },
+          {
+            "line": 1,
+            "name": "@fb1"
           }
         ]
       }
     ],
-    "name": "Task in adactin hotel application",
+    "name": "Facebook Test scenarios",
     "description": "",
-    "id": "task-in-adactin-hotel-application",
+    "id": "facebook-test-scenarios",
     "keyword": "Feature",
-    "uri": "src/test/java/com/cucumber/feature/Adactin.feature"
+    "uri": "Facebook3.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@fb1"
+      }
+    ]
   }
 ]
